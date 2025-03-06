@@ -1,0 +1,265 @@
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Tienda especializada en componentes de computadora con los mejores precios y garantía">
+    <title>GameCore Nexus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .test { background-color: rgb(0, 0, 0); }
+        @media (max-width: 640px) {
+            .menu-container {
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+            }
+            .menu-container::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        .hidden-nav {
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .visible-nav {
+            transform: translateY(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        .compressed-header {
+            padding: 0.5rem 1rem;
+            transition: padding 0.3s ease-in-out;
+        }
+        .expanded-header {
+            padding: 1rem 2rem;
+            transition: padding 0.3s ease-in-out;
+        }
+        @font-face {
+            font-family: 'Proxima Nova';
+            src: url('https://fonts.cdnfonts.com/s/16518/ProximaNova-Regular.woff') format('woff');
+        }
+        .font-proxima-nova {
+            font-family: 'Proxima Nova', sans-serif;
+        }
+        .font-exo-2 {
+            font-family: 'Exo 2', sans-serif;
+        }
+        .font-rajdhani {
+            font-family: 'Rajdhani', sans-serif;
+        }
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .title-style {
+            color: #FFD700;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+    </style>
+</head>
+<body class="test text-gray-800 font-open-sans">
+    <header class="relative bg-black shadow-md expanded-header" id="header">
+        <div class="relative z-10 container mx-auto flex flex-col items-center">
+            <h1 class="title-style mb-4">GameCore Nexus</h1>
+            <nav aria-label="Navegación principal" class="w-full menu-container overflow-x-auto pb-2 visible-nav" id="main-nav">
+                <ul class="flex space-x-4 flex-nowrap px-4 justify-center font-proxima-nova">
+                    <li><a class="text-yellow-500 font-bold hover:text-blue-500 whitespace-nowrap" href="index.html">Inicio</a></li>
+                    <li><a class="text-yellow-500 font-bold hover:text-blue-500 whitespace-nowrap" href="tarjetas_graficas.html">Tarjetas Gráficas</a></li>
+                    <li><a class="text-yellow-500 font-bold hover:text-blue-500 whitespace-nowrap" href="monitores.html">Monitores</a></li>
+                    <li><a class="text-yellow-500 font-bold hover:text-blue-500 whitespace-nowrap" href="cases.html">Cases</a></li>
+                    <li><a class="text-yellow-500 font-bold hover:text-blue-500 whitespace-nowrap" href="placas_madre.html">Placas Madre</a></li>
+                    <li><a class="text-yellow-500 font-bold hover:text-blue-500 whitespace-nowrap" href="procesadores.html">Procesadores</a></li>
+                    <li><a class="text-yellow-500 font-bold hover:text-blue-500 whitespace-nowrap" href="memorias_ram.html">Memorias RAM</a></li>
+                    <li><a class="text-yellow-500 font-bold hover:text-blue-500 whitespace-nowrap" href="almacenamiento.html">Almacenamiento</a></li>
+                    <li><a class="text-yellow-500 font-bold hover:text-blue-500 whitespace-nowrap" href="fuentes_poder.html">Fuentes de Poder</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-0">
+        <section class="relative w-full h-[600px] mb-8">
+            <img loading="lazy" alt="Componentes de computadora" class="w-full h-full object-cover" 
+                 src="https://preview.redd.it/0tyjjyyddwk71.png?auto=webp&s=87d03a84e96dd86ff54b6d8efe7554ef8f7d6a37">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
+                <h2 class="text-5xl font-bold mb-4 text-center font-rajdhani text-white">Bienvenido a nuestra tienda de componentes</h2>
+                <p class="text-gray-300 text-center">Encuentra los mejores productos para armar tu computadora.</p>
+            </div>
+        </section>
+
+        <section class="relative w-full h-32 flex items-center justify-center mb-8">
+            <img alt="Imagen futurista de una ciudad con luces de neón" class="absolute inset-0 w-full h-full object-cover opacity-100" height="1080" src="https://iluminet.com/newpress/wp-content/uploads/2022/01/luzneon-02.jpg" width="1920"/>
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <h2 class="text-3xl font-bold text-white font-rajdhani">Explora nuestros productos</h2>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+            <!-- Almacenamiento -->
+            <article class="bg-white p-4 rounded-lg shadow-md transition-transform duration-200 hover:scale-105">
+                <div class="aspect-square overflow-hidden rounded-t-lg">
+                    <img loading="lazy" alt="Disco M.2 SSD" class="w-full h-full object-cover"
+                         src="https://compuvisionperu.pe/public/img/productos/EZeweSA1fJAKH69x7uqEFDTyT1PJb4HfUlSz4SqZcrjkojXlUEqZH9Ob0ekRZrxtTFjNYPn17NblxyNH.jpg">
+                </div>
+                <h3 class="text-lg font-bold mt-4 font-rajdhani text-black">SSD M.2 WDIGITAL de 5150 Mbps de velocidad</h3>
+                <p class="text-gray-600 mt-2">1 TB de pura potencia</p>
+                <a href="almacenamiento.html" class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                    Ver más
+                </a>
+            </article>
+
+            <!-- Memoria RAM -->
+            <article class="bg-white p-4 rounded-lg shadow-md transition-transform duration-200 hover:scale-105">
+                <div class="aspect-square overflow-hidden rounded-t-lg">
+                    <img loading="lazy" alt="Memoria RAM Kingston" class="w-full h-full object-cover"
+                         src="https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/447/PMP00003090411/imagen3-1.jpeg">
+                </div>
+                <h3 class="text-lg font-bold mt-4 font-rajdhani text-black">Memoria Kingston Beast 16 GB 3600 Mhz</h3>
+                <p class="text-gray-600 mt-2">Alto rendimiento para gaming</p>
+                <a href="memorias_ram.html" class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                    Ver más
+                </a>
+            </article>
+
+            <!-- Placa Madre -->
+            <article class="bg-white p-4 rounded-lg shadow-md transition-transform duration-200 hover:scale-105">
+                <div class="aspect-square overflow-hidden rounded-t-lg">
+                    <img loading="lazy" alt="Placa Madre" class="w-full h-full object-cover"
+                         src="https://m.media-amazon.com/images/I/81b55lN7DgL._AC_UF350,350_QL80_.jpg">
+                </div>
+                <h3 class="text-lg font-bold mt-4 font-rajdhani text-black">Placa Madre ASUS ROG Z890</h3>
+                <p class="text-gray-600 mt-2">Diseño Extreme con WiFi integrado</p>
+                <a href="placas_madre.html" class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                    Ver más
+                </a>
+            </article>
+
+            <!-- Procesador -->
+            <article class="bg-white p-4 rounded-lg shadow-md transition-transform duration-200 hover:scale-105">
+                <div class="aspect-square overflow-hidden rounded-t-lg">
+                    <img loading="lazy" alt="Procesador AMD" class="w-full h-full object-cover"
+                         src="https://www.sercoplus.com/56610-large_default/procesador-intel-core-ultra-5-245k-cach.jpg">
+                </div>
+                <h3 class="text-lg font-bold mt-4 font-rajdhani text-black"> Intel® Core™ Ultra (Serie 2)</h3>
+                <p class="text-gray-600 mt-2">Máximo rendimiento multinúcleo ideal para trabajos extremos</p>
+                <a href="procesadores.html" class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                    Ver más
+                </a>
+            </article>
+
+            <!-- Tarjeta Gráfica -->
+            <article class="bg-white p-4 rounded-lg shadow-md transition-transform duration-200 hover:scale-105">
+                <div class="aspect-square overflow-hidden rounded-t-lg">
+                    <img loading="lazy" alt="Tarjetas Gráficas" class="w-full h-full object-cover"
+                         src="https://tandoanh.vn/wp-content/uploads/2025/02/ASRock-Radeon-RX-9070-XT-Taichi-16GB-OC-300x300.jpg.webp">
+                </div>
+                <h3 class="text-lg font-bold mt-4 font-rajdhani text-black">AMD Radeon™ RX 9070 XT Taichi 16GB OC</h3>
+                <p class="text-gray-600 mt-2">Potencia para gaming 4K</p>
+                <a href="tarjetas_graficas.html" class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                    Ver más
+                </a>
+            </article>
+
+            <!-- Monitor -->
+            <article class="bg-white p-4 rounded-lg shadow-md transition-transform duration-200 hover:scale-105">
+                <div class="aspect-square overflow-hidden rounded-t-lg">
+                    <img loading="lazy" alt="Monitor Ultra HD" class="w-full h-full object-cover"
+                         src="https://plazavea.vteximg.com.br/arquivos/ids/25964294-1000-1000/image-960ac01b5e37428fb9851c9a7e556184.jpg">
+                </div>
+                <h3 class="text-lg font-bold mt-4 font-rajdhani text-black">ASUS Republic of Gamers Strix XG49VQ 49" 32:9 Ultra-Wide Curved 144 Hz"</h3>
+                <p class="text-gray-600 mt-2">Resolución 3440x1440 144Hz</p>
+                <a href="monitores.html" class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                    Ver más
+                </a>
+            </article>
+
+            <!-- Case -->
+            <article class="bg-white p-4 rounded-lg shadow-md transition-transform duration-200 hover:scale-105">
+                <div class="aspect-square overflow-hidden rounded-t-lg">
+                    <img loading="lazy" alt="Case RGB" class="w-full h-full object-cover"
+                         src="https://m.media-amazon.com/images/I/81fxSeJXW+L._AC_UF350,350_QL80_.jpg">
+                </div>
+                <h3 class="text-lg font-bold mt-4 font-rajdhani text-black">Corsair iCUE 4000D RGB Airflow Mid-Tower True White</h3>
+                <p class="text-gray-600 mt-2">CASE con iluminación RGB</p>
+                <a href="cases.html" class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                    Ver más
+                </a>
+            </article>
+
+            <!-- Fuente de Poder -->
+            <article class="bg-white p-4 rounded-lg shadow-md transition-transform duration-200 hover:scale-105">
+                <div class="aspect-square overflow-hidden rounded-t-lg">
+                    <img loading="lazy" alt="Fuente de Poder" class="w-full h-full object-cover"
+                         src="https://computershopperu.com/1633-medium_default/fuente-de-poder-asus-rog-thor-1600w-aura-edition-80-plus-titanium-full-modular-pnrog-thor-1600t-gaming.jpg">
+                </div>
+                <h3 class="text-lg font-bold mt-4 font-rajdhani text-black">FUENTE DE PODER ASUS ROG THOR 1600W AURA EDITION 80 PLUS TITANIUM FULL MODULAR (PN:ROG-THOR-1600T-GAMING)</h3>
+                <p class="text-gray-600 mt-2">Certificación 80 Plus TITANIUM</p>
+                <a href="fuentes_poder.html" class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                    Ver más
+                </a>
+            </article>
+            <!-- Teclado -->
+            <article class="bg-white p-4 rounded-lg shadow-md transition-transform duration-200 hover:scale-105">
+                <div class="aspect-square overflow-hidden rounded-t-lg">
+                    <img loading="lazy" alt="Teclado SteelSeries" class="w-full h-full object-cover"
+                         src="https://m.media-amazon.com/images/I/713vLZcw3FL._AC_SL1500_.jpg">
+                </div>
+                <h3 class="text-lg font-bold mt-4 font-rajdhani text-black">SteelSeries Apex Pro TKL Gen 3 OmniPoint 3.0 </h3>
+                <p class="text-gray-600 mt-2">Interruptores hipermagnéticos — Actuación ajustable — Disparador rápido — Ajustes preestablecidos listos para el juego — Modo de protección — Pulsación</p>
+                <a href="Teclado.html" class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                    Ver más
+                </a>
+            </article>
+        </div>
+    </main>
+
+    <div class="w-full mt-8">
+        <img loading="lazy" alt="Banner de pie de página con imagen de componentes de computadora" class="w-full h-full object-cover"
+             src="https://images7.alphacoders.com/132/1325355.jpeg">
+    </div>
+
+    <footer class="bg-white shadow-md mt-8">
+        <div class="container mx-auto p-4 text-center">
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-700 hover:text-blue-500"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="text-gray-600 mb-4">Contacto: info@componentes.com | Tel: +51 914276713</p>
+            <p id="copyright" class="text-gray-600"></p>
+        </div>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+        const nav = document.getElementById('main-nav');
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                nav.classList.remove('visible-nav');
+                nav.classList.add('hidden-nav');
+                header.classList.remove('expanded-header');
+                header.classList.add('compressed-header');
+            } else {
+                nav.classList.remove('hidden-nav');
+                nav.classList.add('visible-nav');
+                header.classList.remove('compressed-header');
+                header.classList.add('expanded-header');
+            }
+            lastScrollTop = scrollTop;
+        });
+
+        document.getElementById('copyright').textContent = `© ${new Date().getFullYear()} Gamercore Nexus`;
+    </script>
+</body>
+</html>
